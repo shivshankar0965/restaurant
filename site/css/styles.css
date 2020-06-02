@@ -191,7 +191,7 @@ body {
     margin-right: 5px;
   }
 
-#call-btn > a {
+  #call-btn > a {
     font-size: 1.5em;
     display: block;
     margin: 0 20px;
@@ -207,10 +207,31 @@ body {
     text-transform: uppercase;
   }
   /* End Header */
- .container .jumbotron {
-		margin-top: 30px;
-		padding: 0;
-		
-	}
 
+  /* Home Page */
+  .container .jumbotron {
+    margin-top: 30px;
+    padding: 0;
+  }
+
+  #menu-tile, #specials-tile {
+    width: 360px;
+    margin: 0 auto 15px;
+  }
+
+}
+/********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
+@media (max-width: 479px) {
+  /* Header */
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 5px;
+    font-size: 6vw;
+  }
+  /* End Header */
+  
+  /* Home page */
+  #menu-tile, #specials-tile {
+    width: 280px;
+    margin: 0 auto 15px;
+  }
 }
